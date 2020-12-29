@@ -1,0 +1,231 @@
+/*GLOBAL STYLE*/
+
+
+/*CSS REST*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+/*GLOBAL STYLE*/
+
+body {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #7c8e4a;
+    color: #b4d385;
+}
+
+a {
+    text-decoration: none;
+    color: tan;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*HEADER AREA*/
+
+header {
+    background-color: #7c8e4a;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header a {
+    color: tan;
+    font-weight: 600;
+}
+
+.logo {
+    display: inline;
+}
+
+.logo img {
+    width: 64px;
+    vertical-align: middle;
+}
+
+.logo span {
+    margin-left: 15px;
+}
+
+nav {
+    float: right;
+    padding: 22px 0;
+    padding-bottom: 28px;
+}
+
+.nav-links {
+    margin: 0 25px;
+}
+
+.nav-links:hover {
+    color: tan;
+}
+
+
+/*BANNER AREA*/
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    bottom: 0;
+}
+
+.banner-content-text {
+    background-color: #7c8e4a;
+}
+
+.banner-content-text-group {
+    position: absolute;
+    top: 30%;
+    color: tan;
+}
+
+.banner-content-text-group h1 {
+    font-size: 48px;
+}
+
+.banner-content-text-group h3 {
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 36px;
+}
+
+.banner-button {
+    padding: 16px 24px;
+    background-color: #7c8e4a;
+    color: tan;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/*PRODUCT/MENU AREA*/
+.product {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.product h2{
+    padding: 36px 0;
+    font-size: 36px;
+    color: tan;
+}
+
+.product-slider {
+    position: relative;
+}
+
+.product-slider-card {
+    width: 24.5%;
+    background-color: #d3e2bd;
+    color: #7c8e4a;
+    display: inline-block;
+}
+
+.product-slider-card-details * {
+    padding: 12px 18px;
+    background-color: #d3e2bd;
+    color: #7c8e4a;     
+}
+
+.product-slider-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.product-slider-card-details {
+    padding: 36px 0;
+    background-color: #d3e2bd;
+    color: #7c8e4a;
+    
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #7c8e4a;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #7c8e4a;
+}
+
+.product-slider-slides {
+    width: 100%;
+    margin-bottom: 10px;
+    display: none;
+    
+}
+
+.prev {
+    left: 0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Order Area */
+
+.order {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+/* Footer Area */
+
+footer {
+    background-color: tan;
+    color: #7c8e4a;
+    padding: 23.5px 0;
+    text-align: center;
+}
